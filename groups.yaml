@@ -1,0 +1,76 @@
+
+loft:
+  name: Loft
+  view: yes
+  entities:
+   - media_player.sd18
+   - switch.switch
+   - automation.stereo_loft_av
+
+
+kjøkken:
+  name: Kjøkken
+  view: yes
+  entities:
+   - media_player.squeezebox_radio
+   - weblink.logitech_media_server
+
+
+
+stue:
+  name: Stue
+  view: yes
+  entities:
+   - media_player.squeezebox_touch
+   - light.level
+   - automation.lys_stue_av_ukedager
+   - automation.lys_stue_av_weekend
+   - automation.lys_stue_pa
+   - media_player.sony_bravia_tv
+   - group.stue_lys
+   - weblink.logitech_media_server
+
+stue_lys:
+  name: Stue_lys
+  view: no
+  entities:
+   - light.everspring_ad147_plugin_dimmer_module_level
+   - switch.everspring_an180_plugin_onoff_module_switch
+   - switch.everspring_an180_plugin_onoff_module_switch_2
+   - switch.everspring_an180_plugin_onoff_module_switch_3
+
+internet_speed_group:
+  name: Internet Speed
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_ping
+    - sensor.speedtest_upload
+
+family:
+  name: Familie
+  view: no
+  entities:
+    - device_tracker.283f69c8f73e
+    - device_tracker.olav
+    - device_tracker.oddrunsiniphone
+    - device_tracker.jansiniphone
+    - device_tracker.heddararsiphone_2
+
+musikk:
+  name: musikk spillere
+  view: yes
+  entities:
+    - media_player.sd18
+    - media_player.squeezebox_radio
+    - media_player.squeezebox_touch
+
+sensors:
+  name: Sensorer
+  entities:
+    - sensor.unknown
+    - sun.sun
+    - sensor.yr_cloudiness
+    - sensor.fibaro_system_fgwpef_wall_plug_gen5_power
+    - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_2
+    - sensor.sensative_unknown_type0003_id000a_moisture
+    - sensor.sensative_unknown_type0003_id000a_flood

@@ -1,0 +1,94 @@
+- alias: "lys stue på"
+  hide_entity: false
+  trigger:
+  - platform: numeric_state
+    entity_id: sun.sun
+    value_template: "{{ state.attributes.elevation }}"
+    below: 10.0
+  - platform: numeric_state
+    entity_id: sun.sun
+    value_template: "{{ state.attributes.elevation }}"
+    below: 20.0
+  condition:
+    condition: or
+    conditions:
+    - condition: numeric_state
+      entity_id: sun.sun
+      value_template: "{{ state.attributes.elevation }}"
+      below: 10.0
+    - condition: and
+      conditions:
+      - condition: numeric_state
+        entity_id: sun.sun
+        value_template: "{{ state.attributes.elevation }}"
+        below: 53.0
+      - condition: numeric_state
+        entity_id: sensor.yr_cloudiness
+        value_template: "{{ float(state.state) }}"
+        above: 50.0
+  action:
+  - service: homeassistant.turn_on
+    entity_id: light.everspring_ad147_plugin_dimmer_module_level
+  - service: homeassistant.turn_on
+    entity_id: switch.everspring_an180_plugin_onoff_module_switch
+  - service: homeassistant.turn_on
+    entity_id: switch.everspring_an180_plugin_onoff_module_switch_2
+  - service: homeassistant.turn_on
+    entity_id: switch.everspring_an180_plugin_onoff_module_switch_3
+ 
+- alias: "lys stue av weekend"
+  hide_entity: false
+  trigger:
+   - platform: time
+     at: '00:50'
+  condition:
+  - condition: time
+    weekday:
+      - sat
+      - sun
+ 
+
+  action:
+   - service: homeassistant.turn_off
+     entity_id: light.everspring_ad147_plugin_dimmer_module_level 
+   - service: homeassistant.turn_off
+     entity_id: switch.everspring_an180_plugin_onoff_module_switch
+   - service: homeassistant.turn_off
+     entity_id: switch.everspring_an180_plugin_onoff_module_switch_2
+   - service: homeassistant.turn_off
+     entity_id: switch.everspring_an180_plugin_onoff_module_switch_3
+
+
+- alias: "lys stue av ukedager"
+  hide_entity: false
+  trigger:
+   - platform: time
+     at: '23:30'
+  condition:
+  - condition: time
+    weekday:
+      - sun
+      - mon
+      - tue
+      - wed
+      - thu
+
+  action:
+   - service: homeassistant.turn_off
+     entity_id: light.everspring_ad147_plugin_dimmer_module_level
+   - service: homeassistant.turn_off
+     entity_id: switch.everspring_an180_plugin_onoff_module_switch
+   - service: homeassistant.turn_off
+     entity_id: switch.everspring_an180_plugin_onoff_module_switch_2
+   - service: homeassistant.turn_off
+     entity_id: switch.everspring_an180_plugin_onoff_module_switch_3
+
+- alias: "stereo loft av"
+  hide_entity: false
+  trigger: 
+   - platform: time
+     at: '00:10'
+
+  action:
+     service: homeassistant.turn_off
+     entity_id: switch.switch

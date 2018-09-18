@@ -1,0 +1,96 @@
+light.everspring_ad147_plugin_dimmer_module_level:
+  friendly_name: Lys TV
+switch.fibaro_system_fgwpef_wall_plug_gen5_switch:
+  friendly_name: Stereo loft
+switch.everspring_an180_plugin_onoff_module_switch:
+  friendly_name: Lys Vindu
+switch.everspring_an180_plugin_onoff_module_switch_2:
+  friendly_name: Lys Sofa
+switch.everspring_an180_plugin_onoff_module_switch_3:
+  friendly_name: Lys Spisebord
+media_player.squeezebox_touch:
+  hidden: no
+media_player.squeezebox_radio:
+  hidden: no
+media_player.sd18:
+  hidden: no
+zwave.aeotec_zw090_zstick_gen5_eu:
+  hidden: yes
+zwave.everspring_ad147_plugin_dimmer_module:
+  hidden: yes
+zwave.everspring_an180_plugin_onoff_module:
+  hidden: yes
+sensor.everspring_ad147_plugin_dimmer_module_sourcenodeid:
+  hidden: yes
+sensor.everspring_ad147_plugin_dimmer_module_power_management:
+  hidden: yes
+zwave.fibaro_system_fgwpef_wall_plug_gen5:
+  hidden: yes
+zwave.everspring_an180_plugin_onoff_module_2:
+  hidden: yes
+zwave.everspring_an180_plugin_onoff_module_3:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_sourcenodeid:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_power_management:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_sourcenodeid_2:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_power_management_2:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_sourcenodeid_3:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_power_management_3:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_alarm_type:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_alarm_level:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_power:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_power_2:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_exporting:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_sourcenodeid:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_power_management:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_energy:
+  hidden: yes
+sensor.everspring_ad147_plugin_dimmer_module_alarm_type:
+  hidden: yes
+sensor.everspring_ad147_plugin_dimmer_module_alarm_level:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_alarm_type:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_alarm_level:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_alarm_type_2:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_alarm_level_2:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_alarm_type_3:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_alarm_level_3:
+  hidden: yes
+zwave.sensative_strips_comfort:
+  hidden: yes
+sensor.sensative_strips_comfort_luminance:
+  hidden: yes
+sensor.sensative_strips_comfort_moisture:
+  hidden: no
+sensor.sensative_strips_comfort_sourcenodeid:
+  hidden: yes
+sensor.sensative_strips_comfort_heat:
+  hidden: yes
+sensor.sensative_strips_comfort_flood:
+  hidden: no
+sensor.sensative_strips_comfort_burglar:
+  hidden: yes
+binary_sensor.sensative_strips_comfort_sensor:
+  hidden: yes
+sensor.sensative_strips_comfort_alarm_type:
+  hidden: yes
+sensor.sensative_strips_comfort_alarm_level:
+  hidden: yes

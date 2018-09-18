@@ -1,0 +1,5 @@
+name: DD-WRT 
+ - platform: ddwrt
+   host: 192.168.1.254
+   username: root
+   password: Cat4Dog2

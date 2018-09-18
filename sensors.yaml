@@ -1,0 +1,13 @@
+- platform: yr
+  monitored_conditions:
+  - cloudiness
+
+- platform: speedtest
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+  minute: 30
+
+- platform: cpuspeed
+  name: CPU
