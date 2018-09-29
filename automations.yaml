@@ -21,7 +21,7 @@
       - condition: numeric_state
         entity_id: sun.sun
         value_template: "{{ state.attributes.elevation }}"
-        below: 53.0
+        below: 15.0
       - condition: numeric_state
         entity_id: sensor.yr_cloudiness
         value_template: "{{ float(state.state) }}"
