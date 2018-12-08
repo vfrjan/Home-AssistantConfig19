@@ -4,7 +4,7 @@
   - platform: numeric_state
     entity_id: sun.sun
     value_template: "{{ state.attributes.elevation }}"
-    below: 10.0
+    below: 5.0
   - platform: numeric_state
     entity_id: sun.sun
     value_template: "{{ state.attributes.elevation }}"
@@ -91,4 +91,4 @@
 
   action:
      service: homeassistant.turn_off
-     entity_id: switch.switch
+     entity_id: switch.fibaro_system_fgwpef_wall_plug_gen5_switch

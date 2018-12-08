@@ -9,5 +9,3 @@
     - upload
   minute: 30
 
-- platform: cpuspeed
-  name: CPU

@@ -1,10 +1,17 @@
+kjellerstue:
+  name: Kjellerstue
+  view: yes
+  entities:
+   - sensor.thermofloor_as_heatit_thermostat_tf_021_temperature 
+   - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
+   - climate.thermofloor_as_heatit_thermostat_tf_021_heating
 
 loft:
   name: Loft
   view: yes
   entities:
    - media_player.sd18
-   - switch.switch
+   - switch.fibaro_system_fgwpef_wall_plug_gen5_switch
    - automation.stereo_loft_av
 
 
@@ -71,6 +78,6 @@ sensors:
     - sun.sun
     - sensor.yr_cloudiness
     - sensor.fibaro_system_fgwpef_wall_plug_gen5_power
-    - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_2
-    - sensor.sensative_unknown_type0003_id000a_moisture
-    - sensor.sensative_unknown_type0003_id000a_flood
+    - sensor.fibaro_system_fgwpef_wall_plug_gen5_energy
+    - sensor.sensative_strips_comfort_flood
+    - sensor.sensative_strips_comfort_moisture 
