@@ -36,7 +36,7 @@ stue:
    - media_player.sony_bravia_tv
    - group.stue_lys
    - weblink.logitech_media_server
-
+   - zwave.zwaveme_zme_wallcs_secure_wall_controller
 stue_lys:
   name: Stue_lys
   view: no

@@ -100,3 +100,5 @@ climate.thermofloor_as_heatit_thermostat_tf_021_heating:
   friendly_name: Termostat kjellerstue
 climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat:
   friendly_name: Termostat kjellerstue energi oppvarming
+zwave.zwaveme_zme_wallcs_secure_wall_controller:
+  friendly_name: Vegg bryter
