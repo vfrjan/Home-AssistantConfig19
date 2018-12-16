@@ -1,4 +1,49 @@
-- alias: "lys stue på"
+
+- alias: "switch TV av"
+  hide_entity: false
+  trigger:
+  - event_data:
+      entity_id: zwave.zwaveme_zme_wallcs_secure_wall_controller
+      scene_id: 2
+    event_type: zwave.scene_activated
+    platform: event
+
+  action:
+  - service: media_player.turn_off
+    entity_id: media_player.sony_bravia_tv
+
+
+
+- alias: "switch lys stue på"
+  hide_entity: false
+  trigger:
+  - event_data:
+      entity_id: zwave.zwaveme_zme_wallcs_secure_wall_controller
+      scene_id: 5
+    event_type: zwave.scene_activated
+    platform: event
+
+  action:
+  - service: homeassistant.turn_on
+    entity_id: group.stue_lys
+
+- alias: "switch lys stue av"
+  hide_entity: false
+  trigger:
+  - event_data:
+      entity_id: zwave.zwaveme_zme_wallcs_secure_wall_controller
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+
+  action:
+  - service: homeassistant.turn_off
+    entity_id: group.stue_lys
+
+
+
+
+- alias: "scheduled lys stue på"
   hide_entity: false
   trigger:
   - platform: numeric_state
@@ -9,6 +54,7 @@
     entity_id: sun.sun
     value_template: "{{ state.attributes.elevation }}"
     below: 15.0
+  
   condition:
     condition: or
     conditions:
@@ -28,19 +74,14 @@
         above: 50.0
   action:
   - service: homeassistant.turn_on
-    entity_id: light.everspring_ad147_plugin_dimmer_module_level
-  - service: homeassistant.turn_on
-    entity_id: switch.everspring_an180_plugin_onoff_module_switch
-  - service: homeassistant.turn_on
-    entity_id: switch.everspring_an180_plugin_onoff_module_switch_2
-  - service: homeassistant.turn_on
-    entity_id: switch.everspring_an180_plugin_onoff_module_switch_3
+    entity_id: group.stue_lys
  
-- alias: "lys stue av weekend"
+- alias: "scheduled lys stue av weekend"
   hide_entity: false
   trigger:
    - platform: time
      at: '00:50'
+
   condition:
   - condition: time
     weekday:
@@ -50,20 +91,15 @@
 
   action:
    - service: homeassistant.turn_off
-     entity_id: light.everspring_ad147_plugin_dimmer_module_level 
-   - service: homeassistant.turn_off
-     entity_id: switch.everspring_an180_plugin_onoff_module_switch
-   - service: homeassistant.turn_off
-     entity_id: switch.everspring_an180_plugin_onoff_module_switch_2
-   - service: homeassistant.turn_off
-     entity_id: switch.everspring_an180_plugin_onoff_module_switch_3
+     entity_id: group.stue_lys 
 
 
-- alias: "lys stue av ukedager"
+- alias: "scheduled lys stue av ukedager"
   hide_entity: false
   trigger:
    - platform: time
      at: '23:30'
+
   condition:
   - condition: time
     weekday:
@@ -75,13 +111,7 @@
 
   action:
    - service: homeassistant.turn_off
-     entity_id: light.everspring_ad147_plugin_dimmer_module_level
-   - service: homeassistant.turn_off
-     entity_id: switch.everspring_an180_plugin_onoff_module_switch
-   - service: homeassistant.turn_off
-     entity_id: switch.everspring_an180_plugin_onoff_module_switch_2
-   - service: homeassistant.turn_off
-     entity_id: switch.everspring_an180_plugin_onoff_module_switch_3
+     entity_id: group.stue_lys
 
 - alias: "stereo loft av"
   hide_entity: false

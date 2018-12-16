@@ -71,7 +71,7 @@ media_player:
     host: 192.168.1.133
 
   - platform: squeezebox
-    host: 192.168.1.121
+    host: 192.168.1.123
 # Cloud
 cloud:
 
