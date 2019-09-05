@@ -14,6 +14,12 @@ homeassistant:
   customize: !include customize.yaml
   auth_providers:
    - type: trusted_networks
+     trusted_networks:
+       - 127.0.0.1
+       - ::1
+       - 192.168.1.0/24
+       - 172.16.1.0/29
+
 
 # Show links to resources in log and frontend
 #introduction:
@@ -33,6 +39,7 @@ http:
      - 127.0.0.1
      - ::1
      - 192.168.1.0/24
+     - 172.16.1.0/29
 # Checks for available updates
 # Note: This component will send some information about your system to
 # the developers to assist with development of Home Assistant.
@@ -55,25 +62,41 @@ history:
 logbook:
 
 # Enables a map showing the location of tracked devices
-map:
+#map:
 
 # Track the sun
 sun:
 
 # Text to speech
-tts:
-  - platform: google
+#tts:
+#  - platform: google_translate
+#    service_name: google_say
+#    System health
+system_health:
 
 #Sony bravia tv
 
 media_player:
   - platform: braviatv
     host: 192.168.1.133
-
+#    psk: sony
+#    amp: True
   - platform: squeezebox
     host: 192.168.1.123
 # Cloud
 cloud:
+
+#Speedtest
+
+speedtestdotnet:
+  server_id: 12919
+  scan_interval:
+    minutes: 30
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
 
 group: !include groups.yaml
 automation: !include automations.yaml

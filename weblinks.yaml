@@ -2,6 +2,6 @@ entities:
   - name: Logitech media server
     url: http://192.168.1.123:9000
   - name: MRTG network usage
-    url: http://192.168.1.121/mrtg 
+    url: http://192.168.1.123/mrtg 
   - name: Icinga monitoring
     url: http://icinga:icinga@192.168.1.121:/icingaweb2

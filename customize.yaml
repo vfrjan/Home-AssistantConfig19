@@ -17,13 +17,13 @@ media_player.sd18:
 zwave.aeotec_zw090_zstick_gen5_eu:
   hidden: yes
 zwave.everspring_ad147_plugin_dimmer_module:
-  hidden: yes
+  hidden: no
 zwave.everspring_an180_plugin_onoff_module:
   hidden: yes
 sensor.everspring_ad147_plugin_dimmer_module_sourcenodeid:
   hidden: yes
 sensor.everspring_ad147_plugin_dimmer_module_power_management:
-  hidden: yes
+  hidden: no
 zwave.fibaro_system_fgwpef_wall_plug_gen5:
   hidden: yes
 zwave.everspring_an180_plugin_onoff_module_2:
@@ -99,6 +99,59 @@ sensor.sensative_strips_comfort_alarm_level:
 climate.thermofloor_as_heatit_thermostat_tf_021_heating:
   friendly_name: Termostat kjellerstue
 climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat:
-  friendly_name: Termostat kjellerstue energi oppvarming
-zwave.zwaveme_zme_wallcs_secure_wall_controller:
+  hidden: yes
+climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_2:
+  hidden: yes
+climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_3:
+  hidden: yes
+zwave.z_wave_me_zme_wallc_s_secure_wall_controller:
   friendly_name: Vegg bryter
+climate.thermofloor_as_heatit_thermostat_tf_021_heating_2:
+  friendly_name: Termostat toalett 1. etg.
+climate.thermofloor_as_heatit_thermostat_tf_021_heating_3:
+  friendly_name: Termostat bad 2. etg.
+sensor.thermofloor_as_heatit_thermostat_tf_021_energy:
+  hidden: yes
+sensor.thermofloor_as_heatit_thermostat_tf_021_energy_2:
+  hidden: yes
+sensor.thermofloor_as_heatit_thermostat_tf_021_energy_3:
+  hidden: yes 
+sensor.thermofloor_as_heatit_thermostat_tf_021_exporting:
+  hidden: yes
+sensor.thermofloor_as_heatit_thermostat_tf_021_exporting_2:
+  hidden: yes
+sensor.thermofloor_as_heatit_thermostat_tf_021_exporting_3:
+  hidden: yes
+sensor.thermofloor_as_heatit_thermostat_tf_021_temperature:
+  hidden: yes
+sensor.thermofloor_as_heatit_thermostat_tf_021_temperature_2:
+  hidden: yes
+sensor.thermofloor_as_heatit_thermostat_tf_021_temperature_3:
+  hidden: yes
+zwave.thermofloor_as_heatit_thermostat_tf_021:
+  hidden: yes
+zwave.thermofloor_as_heatit_thermostat_tf_021_2:
+  hidden: yes
+zwave.thermofloor_as_heatit_thermostat_tf_021_3:
+  hidden: yes
+light.fibaro_system_fgd212_dimmer_2_level:
+  hidden: yes
+light.fibaro_system_fgd212_dimmer_2_level_2:
+  friendly_name: Lys kjellerstue
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level:
+  hidden: yes
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type:
+  hidden: yes
+sensor.fibaro_system_fgd212_dimmer_2_exporting:
+  hidden: yes
+sensor.fibaro_system_fgd212_dimmer_2_power:
+  hidden: yes
+sensor.fibaro_system_fgd212_dimmer_2_power_management:
+  hidden: yes
+sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid:
+  hidden: yes
+sensor.fibaro_system_fgd212_dimmer_2_system:
+  hidden: yes
+zwave.fibaro_system_fgd212_dimmer_2:
+  hidden: yes
+

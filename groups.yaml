@@ -1,9 +1,15 @@
+bad:
+  name: Bad
+  view: yes
+  entities:
+   - climate.thermofloor_as_heatit_thermostat_tf_021_heating_2
+   - climate.thermofloor_as_heatit_thermostat_tf_021_heating_3
+
 kjellerstue:
   name: Kjellerstue
   view: yes
   entities:
-   - sensor.thermofloor_as_heatit_thermostat_tf_021_temperature 
-   - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
+   - light.fibaro_system_fgd212_dimmer_2_level_2
    - climate.thermofloor_as_heatit_thermostat_tf_021_heating
 
 loft:
@@ -20,6 +26,8 @@ kjøkken:
   view: yes
   entities:
    - media_player.squeezebox_radio
+   - sensor.sensative_strips_comfort_moisture
+   - sensor.sensative_strips_comfort_temperature
    - weblink.logitech_media_server
 
 
@@ -36,7 +44,7 @@ stue:
    - media_player.sony_bravia_tv
    - group.stue_lys
    - weblink.logitech_media_server
-   - zwave.zwaveme_zme_wallcs_secure_wall_controller
+   - zwave.z_wave_me_zme_wallc_s_secure_wall_controller
 stue_lys:
   name: Stue_lys
   view: no
@@ -57,11 +65,10 @@ family:
   name: Familie
   view: no
   entities:
-    - device_tracker.283f69c8f73e
+    - device_tracker.387862c16884
     - device_tracker.olav
     - device_tracker.oddrunsiniphone
     - device_tracker.jansiniphone
-    - device_tracker.heddararsiphone_2
 
 musikk:
   name: musikk spillere
@@ -74,7 +81,6 @@ musikk:
 sensors:
   name: Sensorer
   entities:
-    - sensor.unknown
     - sun.sun
     - sensor.yr_cloudiness
     - sensor.fibaro_system_fgwpef_wall_plug_gen5_power

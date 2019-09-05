@@ -3,7 +3,7 @@
   hide_entity: false
   trigger:
   - event_data:
-      entity_id: zwave.zwaveme_zme_wallcs_secure_wall_controller
+      entity_id: zwave.z_wave_me_zme_wallc_s_secure_wall_controller
       scene_id: 2
     event_type: zwave.scene_activated
     platform: event
@@ -18,7 +18,7 @@
   hide_entity: false
   trigger:
   - event_data:
-      entity_id: zwave.zwaveme_zme_wallcs_secure_wall_controller
+      entity_id: zwave.z_wave_me_zme_wallc_s_secure_wall_controller
       scene_id: 5
     event_type: zwave.scene_activated
     platform: event
@@ -31,7 +31,9 @@
   hide_entity: false
   trigger:
   - event_data:
-      entity_id: zwave.zwaveme_zme_wallcs_secure_wall_controller
+      entity_id: zwave.z_wave_me_zme_wallc_s_secure_wall_controller
+      node_id: 9
+      scene_data: 0
       scene_id: 1
     event_type: zwave.scene_activated
     platform: event

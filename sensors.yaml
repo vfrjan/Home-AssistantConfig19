@@ -2,10 +2,3 @@
   monitored_conditions:
   - cloudiness
 
-- platform: speedtest
-  monitored_conditions:
-    - ping
-    - download
-    - upload
-  minute: 30
-
