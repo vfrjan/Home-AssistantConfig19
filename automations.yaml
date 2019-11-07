@@ -115,12 +115,52 @@
    - service: homeassistant.turn_off
      entity_id: group.stue_lys
 
-- alias: "stereo loft av"
+- alias: "Varme soverom på" 
+  hide_entity: false
+  trigger:
+   - platform: time
+     at: '19:00'
+
+  action:
+   - service: homeassistant.turn_on
+     entity_id: switch.fibaro_system_fgwpef_wall_plug_gen5_switch
+
+
+
+
+- alias: "Varme soverom av ukedager"
   hide_entity: false
   trigger: 
    - platform: time
-     at: '00:10'
+     at: '23:00'
+
+  condition:
+  - condition: time
+    weekday:
+      - sun
+      - mon
+      - tue
+      - wed
+      - thu
 
   action:
-     service: homeassistant.turn_off
+   - service: homeassistant.turn_off
      entity_id: switch.fibaro_system_fgwpef_wall_plug_gen5_switch
+
+- alias: "Varme soverom av helg"
+  hide_entity: false
+  trigger:
+   - platform: time
+     at: '23:30'
+
+  condition:
+  - condition: time
+    weekday:
+      - sat
+      - fri
+
+  action:
+   - service: homeassistant.turn_off
+     entity_id: switch.fibaro_system_fgwpef_wall_plug_gen5_switch
+
+

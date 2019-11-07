@@ -61,15 +61,6 @@ internet_speed_group:
     - sensor.speedtest_ping
     - sensor.speedtest_upload
 
-family:
-  name: Familie
-  view: no
-  entities:
-    - device_tracker.387862c16884
-    - device_tracker.olav
-    - device_tracker.oddrunsiniphone
-    - device_tracker.jansiniphone
-
 musikk:
   name: musikk spillere
   view: yes
